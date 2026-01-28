@@ -12,3 +12,29 @@
 #containerhome {
     padding-top: 150px;
 }
+
+
+#about {
+    margin-top: 70px;
+}
+
+#about .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#about .row {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+}
+
+#about img {
+    max-width: 400px;
+    margin-bottom: 20px;
+}
+
+#containerhome {
+    text-align: center;
+}
