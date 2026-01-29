@@ -1,149 +1,176 @@
 <!DOCTYPE html>
-<html lang="eng">
+<html lang="en">
 
 <head>
-    <link rel="stylesheet" href="styles.css">
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>Isaac Sobredilla - Portfolio</title>
 
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
 
+    <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#">MyPortfolio</a>
-
+            <a class="navbar-brand" href="#"><i class="fas fa-code me-2"></i>MyPortfolio</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
             <div class="collapse navbar-collapse" id="navMenu">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Project</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
+    <!-- Bento Grid Container -->
+    <div class="bento-container" id="home">
 
-    <!--Home Section-->
-    <section id="home" class="bg-primary text-white text-color p-5">
-        <div id="containerhome" class="container">
-            <h1>Hello I'm Isaac</h1>
-            <p class="lead">Web Developer/ IT Student</p>
-            <a href="#projects" class="btn btn-light">View My Work</a>
-        </div>
-    </section>
-
-    <!--About me Section-->
-    <section id="about">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <img src="assests/Sobredilla (1).jpg" class="img-fluid rounded">
+        <!-- Profile Card (Spans 4 columns - full width) -->
+        <div class="bento-card span-4 profile-card">
+            <img src="assests/Sobredilla (1).jpg" alt="Profile" class="profile-img">
+            <div class="profile-info">
+                <h1>Isaac Sobredilla</h1>
+                <p class="lead text-muted">Web Developer & IT Student</p>
+                <div class="profile-links mt-3">
+                    <a href="isaacsobredilla120@gmail.com">
+                        <i class="fas fa-envelope me-2"></i>isaacsobredilla120@gmail.com</a>
+                    <a href="#" target="_blank"><i class="fab fa-linkedin me-2"></i>LinkedIn</a>
+                    <a href=" https://github.com/jsobredilla559368-oss"><i class="fab fa-github me-2"></i>GitHub</a>
+                    <a href="#" target="_blank"><i class="fab fa-facebook me-2"></i>Facebook</a>
                 </div>
-                <h2>About Me</h2>
-                <p>
-                    I am a Student who wants to pursue Web Development through learning CSS, HTML, BootStrap, and
-                    JavaScript.
-                    I enjoy building simple responsive websites and gradually improving them to perfection.
-                </p>
-
             </div>
-        </div>
-    </section>
-
-    <!--SKills Section-->
-    <section id="skills">
-        <div class="container text-center">
-
-            <h2 class="mb-5">My Skills</h2>
-
-
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="card p-3">HTML</div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card p-3">CSS</div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card p-3">Bootstrap</div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card p-3">JavaScript</div>
-                </div>
+            <div class="ms-auto d-none d-md-block">
+                <!--University Logo or Status Badge here -->
+                <span class="badge bg-primary rounded-pill p-3">Available for Hire</span>
             </div>
         </div>
 
-    </section>
+        <!-- About Me (Spans 2 columns) -->
+        <div class="bento-card span-2" id="about">
+            <h3><i class="fas fa-user mb-2 me-2 text-primary"></i>About Me</h3>
+            <p>I am a BS Information Technology graduate with experience working as a front-end developer. I focus on
+                building clean, responsive, and user-friendly interfaces using React and TypeScript.</p>
+            <p>Currently learning Next.js to broaden my skill set and strengthen my understanding of modern web
+                development.</p>
+        </div>
 
-    <!--Projects-->
+        <!-- Skills (Spans 1 column, but 2 rows tall) -->
+        <div class="bento-card span-1 row-span-2" id="skills">
+            <h3><i class="fas fa-tools mb-2 me-2 text-primary"></i>Tech Stack</h3>
 
-    <section id="projects" class="py-5">
-        <div class="container text-center">
-            <h2 class="mb-4">My Projects</h2>
+            <h5 class="mt-3">Frontend</h5>
+            <div>
+                <span class="skill-tag">HTML5</span>
+                <span class="skill-tag">CSS3</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">React</span>
+                <span class="skill-tag">Bootstrap</span>
+                <span class="skill-tag">Tailwind</span>
+            </div>
 
-            <div class="row">
-                <div class="col-md-4 mb-3">
-                    <div class="card">
-                        <img src="https://picsum.phots/300" class="card img-top">
-                        <div class="card-body">
-                            <h5 class="card-title">Project 1</h5>
-                            <p class="card-test">Simple website design.</p>
-                        </div>
-                    </div>
-                </div>
+            <h5 class="mt-4">Tools</h5>
+            <div>
+                <span class="skill-tag">Git</span>
+                <span class="skill-tag">VS Code</span>
+                <span class="skill-tag">Figma</span>
+            </div>
+        </div>
 
-                <div class="col-md-4 mb-3">
-                    <div class="card">
-                        <img src="https://picsum.phots/300" class="card img-top">
-                        <div class="card-body">
-                            <h5 class="card-title">Project 2</h5>
-                            <p class="card-test">Bootstrap landing page.</p>
-                        </div>
-                    </div>
-                </div>
+        <!-- Experience / Timeline (Spans 1 column, 2 rows) -->
+        <div class="bento-card span-1 row-span-2">
+            <h3><i class="fas fa-briefcase mb-2 me-2 text-primary"></i>Experience</h3>
 
-                <div class="col-md-4 mb-3">
-                    <div class="card">
-                        <img src="https://picsum.phots/300" class="card img-top">
-                        <div class="card-body">
-                            <h5 class="card-title">Project 1</h5>
-                            <p class="card-test">Portfolio website.</p>
-                        </div>
-                    </div>
+            <div class="mb-3">
+                <small class="text-muted d-block">June 2025 - Present</small>
+                <strong>Junior Frontend Developer</strong>
+                <p class="small text-muted mb-0">Aquila Softwares</p>
+            </div>
+            <hr>
+            <div class="mb-3">
+                <small class="text-muted d-block">March 2025 - June 2025</small>
+                <strong>Intern Developer</strong>
+                <p class="small text-muted mb-0">Aquila Softwares</p>
+            </div>
+        </div>
+
+        <!-- Projects Header (Spans 4 columns) -->
+        <div class="span-4 mt-2" id="projects">
+            <h3 class="mb-0">Recent Projects <a href="#" class="float-end fs-6 text-decoration-none">View All ></a></h3>
+        </div>
+
+        <!-- Project 1 (Spans 2 columns) -->
+        <div class="bento-card span-2">
+            <div class="project-card-inner">
+                <img src="https://picsum.photos/id/1/600/300" class="project-img" alt="Project 1">
+                <h4>BetterMomsh</h4>
+                <p class="text-muted small flex-grow-1">An e-commerce website: Curated baby products for moms and
+                    infants.</p>
+                <div>
+                    <span class="badge bg-light text-dark border">React</span>
+                    <span class="badge bg-light text-dark border">Node.js</span>
                 </div>
             </div>
         </div>
-    </section>
 
-    <!--Contact-->
-    <section id="contact" class="bg-dark text-white py-5">
-        <div class="container text-center">
-            <h2>Contact Me</h2>
-            <p>Email: isaacsobredilla120@gmail.com</p>
-            <p>Phone: +63 992 028 8099</p>
+        <!-- Project 2 (Spans 1 column) -->
+        <div class="bento-card span-1">
+            <div class="project-card-inner">
+                <img src="https://picsum.photos/id/2/400/300" class="project-img" alt="Project 2">
+                <h5>Portfolio V1</h5>
+                <p class="text-muted small flex-grow-1">My first portfolio website using Bootstrap.</p>
+                <a href="#" class="btn btn-sm btn-outline-primary mt-2">View</a>
+            </div>
         </div>
-    </section>
 
-    <!--Footer-->
-    <footer class="text-center py-3 bg-secondary text-white">
-        <p class="mb-0">2026 My Portfolio</p>
+        <!-- Project 3 (Spans 1 column) -->
+        <div class="bento-card span-1">
+            <div class="project-card-inner">
+                <img src="https://picsum.photos/id/3/400/300" class="project-img" alt="Project 3">
+                <h5>Task App</h5>
+                <p class="text-muted small flex-grow-1">A simple task management app.</p>
+                <a href="#" class="btn btn-sm btn-outline-primary mt-2">View</a>
+            </div>
+        </div>
 
+        <!-- Contact (Spans 4 columns) -->
+        <div class="bento-card span-4 bg-dark text-white" id="contact"
+            style="background: linear-gradient(45deg, #212529, #343a40);">
+            <div class="d-flex justify-content-between align-items-center flex-wrap gap-3">
+                <div>
+                    <h3 class="mb-1 text-white">Let's work together!</h3>
+                    <p class="mb-0 text-white-50">I'm currently available for freelance work or full-time positions.</p>
+                </div>
+                <a href="isaacsobredilla120@gmail.com" class="btn btn-light rounded-pill px-4">Contact Me</a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center py-4 text-muted mt-5">
+        <small>&copy; 2026 Isaac Sobredilla. All rights reserved.</small>
     </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

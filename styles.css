@@ -1,40 +1,147 @@
-#home {
-    height: 100vh;
-    background: linear-gradient(to right, #0d6efd, #6610f2);
-    color: white;
-    margin-bottom: 70px;
+/* Basic Setup */
+:root {
+    --bg-color: #f8f9fa;
+    --card-bg: #ffffff;
+    --text-primary: #333;
+    --text-secondary: #666;
+    --primary-color: #0d6efd;
+    --gap: 20px;
 }
 
-#skills {
-    margin-top: 70px;
+body {
+    background-color: var(--bg-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text-primary);
+    padding: 20px;
+    margin: 0;
 }
 
-#containerhome {
-    padding-top: 150px;
+/* Remove default Navbar margin if present */
+.navbar {
+    margin-bottom: 20px;
+    border-radius: 12px;
 }
 
-
-#about {
-    margin-top: 70px;
+/* Bento Grid Container */
+.bento-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    gap: var(--gap);
+    max-width: 1400px;
+    margin: 80px auto 0; /* Space for fixed navbar */
+    padding-bottom: 40px;
 }
 
-#about .container {
+/* Bento Card Style */
+.bento-card {
+    background: var(--card-bg);
+    border-radius: 20px;
+    padding: 24px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
+}
+
+.bento-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+.bento-card h2, .bento-card h3, .bento-card h5 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+/* Specific Card Sizes & Spans */
+.span-2 { grid-column: span 2; }
+.span-3 { grid-column: span 3; }
+.span-4 { grid-column: span 4; }
+.row-span-2 { grid-row: span 2; }
+
+/* Profile Card */
+.profile-card {
+    display: flex;
     align-items: center;
+    gap: 20px;
+}
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid var(--primary-color);
+}
+.profile-info h1 {
+    font-size: 1.8rem;
+    margin-bottom: 0.25rem;
+}
+.profile-links a {
+    text-decoration: none;
+    color: var(--text-secondary);
+    margin-right: 15px;
+    font-size: 0.9rem;
+    transition: color 0.2s;
+}
+.profile-links a:hover {
+    color: var(--primary-color);
 }
 
-#about .row {
+/* Badge/Tag Styles (for Skills) */
+.skill-tag {
+    display: inline-block;
+    padding: 8px 16px;
+    margin: 4px;
+    background-color: #e9ecef;
+    color: #495057;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+/* Projects */
+.project-card-inner {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.project-img {
     width: 100%;
-    justify-content: center;
-    text-align: center;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 15px;
 }
 
-#about img {
-    max-width: 400px;
-    margin-bottom: 20px;
+/* Responsive */
+@media (max-width: 992px) {
+    .bento-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .span-3, .span-4 {
+        grid-column: span 2;
+    }
 }
 
-#containerhome {
-    text-align: center;
+@media (max-width: 768px) {
+    .bento-container {
+        grid-template-columns: 1fr;
+        margin-top: 20px;
+    }
+    .span-2, .span-3, .span-4 {
+        grid-column: span 1;
+    }
+    .profile-card {
+        flex-direction: column;
+        text-align: center;
+    }
+    .navbar.fixed-top {
+        position: relative; /* Unstick on mobile for better space mgmt */
+    }
+    .bento-container {
+        margin-top: 10px;
+    }
 }
