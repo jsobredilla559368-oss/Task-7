@@ -2,480 +2,557 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Isaac Sobredilla - Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Isaac Sobredilla — Developer & Builder</title>
+  <meta name="description"
+    content="Isaac Sobredilla is a web developer and AI builder based in Davao City, Philippines. Specializes in React, TypeScript, Laravel, and full-stack development. Available for freelance and full-time work.">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="styles.css">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet">
 
-    <!-- FontAwesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#"><i class="fas fa-code me-2"></i>MyPortfolio</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navMenu">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#client-websites">Clients</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                    <li class="nav-item"><a class="nav-link btn btn-primary text-white px-3 ms-2"
-                            href="https://drive.google.com/file/d/1GkpCZ1AP-BRcOLickW_g4ifV3ogSqMlM/view?usp=sharing"
-                            target="_blank" rel="noopener noreferrer"><i class="fas fa-file-alt me-1"></i>Resume</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+  <!-- ============================================================
+       NAVBAR
+       ============================================================ -->
+  <nav class="navbar">
 
-    <!-- Bento Grid Container -->
-    <div class="bento-container" id="home">
+    <!-- Monogram -->
+    <a href="#home" class="nav-monogram" aria-label="Isaac Sobredilla — Home">IS</a>
 
-        <!-- Profile Card (Spans 4 columns - full width) -->
-        <div class="bento-card span-4 profile-card">
-            <img src="assests/Sobredilla (1).jpg" alt="Profile" class="profile-img">
-            <div class="profile-info">
-                <h1>Isaac Sobredilla</h1>
-                <p class="lead text-muted">Web Developer</p>
-                <div class="profile-links mt-3">
-                    <a
-                        href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJfscdlgwpGvNWwHTMMNmGTkLNZcZZSdbNCNZLDmqPqBKmHNxlmZMCWQsHTnGhnHhWSNTLq">
-                        <i class="fas fa-envelope me-2"></i>Gmail</a>
-                    <a href="https://www.linkedin.com/in/isaac-sobredilla-b3118839b/"><i
-                            class="fab fa-linkedin me-2"></i>LinkedIn</a>
-                    <a href=" https://github.com/jsobredilla559368-oss"><i class="fab fa-github me-2"></i>GitHub</a>
-                    <a href="https://www.facebook.com/johnisaac.sobredilla.7"><i
-                            class="fab fa-facebook me-2"></i>Facebook</a>
-                    <a href="https://docs.google.com/document/d/1n2WcdQzSrFK-kx8W0vt06XxdYAfHvn8M85fnKCFousQ/edit?usp=sharing"
-                        target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm px-3 text-white"><i
-                            class="fas fa-file-alt me-2"></i>View Resume</a>
-                </div>
-            </div>
-            <div class="ms-auto d-none d-md-block">
-                <!--University Logo or Status Badge here -->
-                <span class="badge bg-primary rounded-pill p-3">Available for Hire</span>
-            </div>
-        </div>
+    <!-- Links -->
+    <ul class="nav-links">
+      <li><a href="#about">about</a></li>
+      <li><a href="#skills">skills</a></li>
+      <li><a href="#work">work</a></li>
+      <li><a href="#clients">clients</a></li>
+      <li><a href="#certifications">certs</a></li>
+      <li><a href="#contact">contact</a></li>
+    </ul>
 
-        <!-- About Me (Spans 2 columns) -->
-        <div class="bento-card span-2" id="about">
-            <h3><i class="fas fa-user mb-2 me-2 text-primary"></i>About Me</h3>
-            <p>A detail-oriented web developer with a strong foundation in Information Technology,
-                passionate about crafting clean, responsive, and user-friendly web experiences.
-                I specialize in building modern interfaces using React, Tailwind, and TypeScript,
-                bringing designs to life from wireframe to deployment using tools like Figma and Vercel.</p>
-            <p class="mt-2">Beyond the front-end, I also have full-stack experience building robust systems with
-                Laravel and PostgreSQL. Whether working independently or collaborating in a team, I thrive on
-                solving complex problems and continuously learning new technologies to build impactful digital
-                solutions.</p>
-        </div>
-
-        <!-- Skills (Spans 1 column, but 2 rows tall) -->
-        <div class="bento-card span-1 row-span-2" id="skills">
-            <h3><i class="fas fa-tools mb-2 me-2 text-primary"></i>Tech Stack</h3>
-
-            <h5 class="mt-3">Frontend</h5>
-            <div>
-                <span class="skill-tag">HTML</span>
-                <span class="skill-tag">CSS</span>
-                <span class="skill-tag">JavaScript</span>
-                <span class="skill-tag">React</span>
-                <span class="skill-tag">Bootstrap</span>
-                <span class="skill-tag">Tailwind</span>
-            </div>
-
-            <h5 class="mt-4">Tools/AI Tools</h5>
-            <div>
-                <span class="skill-tag">Git</span>
-                <span class="skill-tag">GitHub</span>
-                <span class="skill-tag">Vercel</span>
-                <span class="skill-tag">VS Code</span>
-                <span class="skill-tag">Figma</span>
-                <span class="skill-tag">Antigravity</span>
-                <span class="skill-tag">Claude</span>
-                <span class="skill-tag">Gemini</span>
-                <span class="skill-tag">GitHub Copilot</span>
-            </div>
-        </div>
-
-        <!-- Experience / Timeline (Spans 1 column, 2 rows) -->
-        <div class="bento-card span-1 row-span-2">
-            <h3><i class="fas fa-briefcase mb-2 me-2 text-primary"></i>Experience</h3>
-
-            <div class="mb-3">
-                <small class="text-muted d-block">Personal</small>
-                <strong>Engineering Services Website</strong>
-                <p class="small text-primary mb-1">Front-End Developer</p>
-                <ul class="small text-muted ps-3 mb-0">
-                    <li>Designed and developed a complete business website from scratch using HTML, CSS, and JavaScript.
-                    </li>
-                    <li>Built responsive layouts ensuring compatibility across desktop and mobile devices.</li>
-                    <li>Deployed the live website on Vercel — accessible online without a custom domain.</li>
-                    <li>Handled all aspects independently: UI design, coding, testing, and deployment.</li>
-                </ul>
-            </div>
-            <hr>
-            <div class="mb-3">
-                <small class="text-muted d-block">Academic</small>
-                <strong>Student IT Projects</strong>
-                <p class="small text-primary mb-1">University of Mindanao</p>
-                <ul class="small text-muted ps-3 mb-0">
-                    <li>Collaborated on group projects involving system planning, basic information systems, and
-                        technical troubleshooting.</li>
-                    <li>Practiced local network setup and provided peer technical support during lab exercises.</li>
-                    <li>Participated in hackathons and coding competitions, applying problem-solving and teamwork
-                        skills to develop innovative solutions under time constraints.</li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- Projects Header (Spans 4 columns) -->
-        <div class="span-4 mt-2" id="projects">
-            <h3 class="mb-0">Recent Projects <a href="#" class="float-end fs-6 text-decoration-none">View All ></a></h3>
-        </div>
-
-        <!-- Project 1 (Spans 2 columns) -->
-        <div class="bento-card span-2">
-            <div class="project-card-inner">
-                <img src="assests/susdevpro.png" class="project-img" alt="SusDevPro Environmental Engineering Services">
-                <h4>SusDevPro Environmental Engineering Services</h4>
-                <p class="text-muted small flex-grow-1">A professional website for an environmental consulting and
-                    engineering firm, helping clients achieve compliance while minimizing ecological impact in Davao
-                    City and beyond.</p>
-                <div class="d-flex align-items-center justify-content-between mt-2">
-                    <div>
-                        <span class="badge bg-light text-dark border">React</span>
-                        <span class="badge bg-light text-dark border">TypeScript</span>
-                        <span class="badge bg-light text-dark border">Tailwind</span>
-                    </div>
-                    <a href="https://susdevproprototype1-gamma.vercel.app/" target="_blank" rel="noopener noreferrer"
-                        class="btn btn-sm btn-outline-primary">Live Site →</a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Project 2 (Spans 2 columns) -->
-        <div class="bento-card span-2">
-            <div class="project-card-inner">
-                <img src="assests/ricems.png" class="project-img" alt="Rice Business Management System">
-                <h4>Rice Business Management System</h4>
-                <p class="text-muted small flex-grow-1">A comprehensive inventory and order management system for rice
-                    businesses, featuring product tracking, payment processing, and administrative dashboards.</p>
-                <div class="d-flex align-items-center justify-content-between mt-2">
-                    <div>
-                        <span class="badge bg-light text-dark border">Laravel</span>
-                        <span class="badge bg-light text-dark border">PostgreSQL</span>
-                        <span class="badge bg-light text-dark border">Tailwind</span>
-                    </div>
-                    <a href="https://sobredilla-labexam2-1.onrender.com/" target="_blank" rel="noopener noreferrer"
-                        class="btn btn-sm btn-outline-primary">Live Site →</a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Project 3 (Spans 2 column) -->
-        <div class="bento-card span-2">
-            <div class="project-card-inner">
-                <img src="https://picsum.photos/id/2/400/300" class="project-img" alt="Project 2">
-                <h5>Portfolio V1</h5>
-                <p class="text-muted small flex-grow-1">My first portfolio website using Bootstrap.</p>
-                <a href="#" class="btn btn-sm btn-outline-primary mt-2">View</a>
-            </div>
-        </div>
-
-        <!-- Project 4 (Spans 2 column) -->
-        <div class="bento-card span-2">
-            <div class="project-card-inner">
-                <img src="assests/calculator.png" class="project-img" alt="Calculator Web App">
-                <h5>Calculator Web App</h5>
-                <p class="text-muted small flex-grow-1">A clean, functional calculator web app built and deployed on
-                    Vercel.</p>
-                <a href="https://calculatiorweb.vercel.app/" target="_blank" rel="noopener noreferrer"
-                    class="btn btn-sm btn-outline-primary mt-2">Live Site →</a>
-            </div>
-        </div>
-
-        <!-- Client Websites Header (Spans 4 columns) -->
-        <div class="span-4 mt-2" id="client-websites">
-            <h3 class="mb-0"><i class="fas fa-users me-2 text-primary"></i>Client Websites <span
-                    class="badge bg-primary fs-6 ms-2 align-middle"
-                    style="font-size:0.6rem !important;">Freelance</span></h3>
-        </div>
-
-        <!-- Client Websites Banner (Spans 4 columns) -->
-        <div class="bento-card span-4" style="padding: 0; overflow: hidden; position: relative;">
-            <img src="assests/client_websites_banner.png" alt="Client Portfolio Websites"
-                style="width:100%; height: 220px; object-fit: cover; display:block; border-radius: inherit;">
-            <div
-                style="position:absolute; inset:0; background: linear-gradient(to right, rgba(13,110,253,0.7) 0%, rgba(0,0,0,0.4) 100%); border-radius: inherit; display:flex; align-items:center; padding: 2rem;">
-                <div>
-                    <h4 class="text-white mb-1" style="text-shadow: 0 2px 8px rgba(0,0,0,0.5);">Portfolio Websites Built
-                        for Clients</h4>
-                    <p class="text-white-50 mb-0 small">Designed and developed fully responsive personal portfolio sites
-                        for real clients — from concept to live deployment.</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Client 1 - Jenny Morales (Spans 2 columns) -->
-        <div class="bento-card span-2">
-            <div class="project-card-inner">
-                <div class="d-flex align-items-center gap-2 mb-3">
-                    <div
-                        style="width:42px; height:42px; border-radius:10px; background: linear-gradient(135deg,#e91e8c,#9c27b0); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
-                        <i class="fas fa-blog text-white"></i>
-                    </div>
-                    <div>
-                        <h5 class="mb-0">Jenny Morales</h5>
-                        <small class="text-muted">Personal Portfolio &amp; Blog</small>
-                    </div>
-                </div>
-                <p class="text-muted small flex-grow-1">A vibrant personal portfolio and blog website crafted for Jenny
-                    Morales, showcasing her work and personal brand with a clean, modern aesthetic.</p>
-                <div class="d-flex align-items-center justify-content-between mt-2">
-                    <div>
-                        <span class="badge bg-light text-dark border">HTML</span>
-                        <span class="badge bg-light text-dark border">CSS</span>
-                        <span class="badge bg-light text-dark border">Blog</span>
-                    </div>
-                    <a href="https://jennymorales.lovestoblog.com/" target="_blank" rel="noopener noreferrer"
-                        class="btn btn-sm btn-outline-primary">Live Site →</a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Client 2 - Dahuno G Portfolio (Spans 2 columns) -->
-        <div class="bento-card span-2">
-            <div class="project-card-inner">
-                <div class="d-flex align-items-center gap-2 mb-3">
-                    <div
-                        style="width:42px; height:42px; border-radius:10px; background: linear-gradient(135deg,#1565c0,#00acc1); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
-                        <i class="fas fa-user-circle text-white"></i>
-                    </div>
-                    <div>
-                        <h5 class="mb-0">Dahuno G</h5>
-                        <small class="text-muted">Professional Portfolio</small>
-                    </div>
-                </div>
-                <p class="text-muted small flex-grow-1">A sleek and professional portfolio website built for Dahuno G,
-                    highlighting skills, projects, and achievements in a polished digital presence.</p>
-                <div class="d-flex align-items-center justify-content-between mt-2">
-                    <div>
-                        <span class="badge bg-light text-dark border">HTML</span>
-                        <span class="badge bg-light text-dark border">CSS</span>
-                        <span class="badge bg-light text-dark border">Portfolio</span>
-                    </div>
-                    <a href="https://dahunogportfolio.page.gd/" target="_blank" rel="noopener noreferrer"
-                        class="btn btn-sm btn-outline-primary">Live Site →</a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Client 3 - Banog I Blogger (Spans 2 columns) -->
-        <div class="bento-card span-2">
-            <div class="project-card-inner">
-                <div class="d-flex align-items-center gap-2 mb-3">
-                    <div
-                        style="width:42px; height:42px; border-radius:10px; background: linear-gradient(135deg,#2e7d32,#66bb6a); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
-                        <i class="fas fa-pen-nib text-white"></i>
-                    </div>
-                    <div>
-                        <h5 class="mb-0">Banog I Blogger</h5>
-                        <small class="text-muted">Blog Portfolio</small>
-                    </div>
-                </div>
-                <p class="text-muted small flex-grow-1">A creative blog-style portfolio website for Banog I, combining
-                    personal storytelling with professional presentation in a fully responsive layout.</p>
-                <div class="d-flex align-items-center justify-content-between mt-2">
-                    <div>
-                        <span class="badge bg-light text-dark border">HTML</span>
-                        <span class="badge bg-light text-dark border">CSS</span>
-                        <span class="badge bg-light text-dark border">Blogger</span>
-                    </div>
-                    <a href="https://banogiblogger.infinityfree.me/" target="_blank" rel="noopener noreferrer"
-                        class="btn btn-sm btn-outline-primary">Live Site →</a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Certifications Header (Spans 4 columns) -->
-        <div class="span-4 mt-2" id="certifications">
-            <h3 class="mb-0"><i class="fas fa-certificate mb-2 me-2 text-primary"></i>Certifications</h3>
-        </div>
-
-        <!-- Certificate 1 (Spans 4 columns) -->
-        <div class="bento-card span-4">
-            <div class="d-flex flex-column flex-md-row gap-4 align-items-center">
-                <div style="min-width: 280px; max-width: 340px; width: 100%;">
-                    <img src="assests/database_certificate.png" class="w-100" alt="IT Specialist - Databases"
-                        onclick="openLightbox('assests/database_certificate.png', 'IT Specialist - Databases Certificate')"
-                        style="object-fit: cover; border-radius: 12px; border: 1px solid #e9ecef; height: 200px; cursor: zoom-in; transition: transform 0.2s, box-shadow 0.2s;"
-                        onmouseover="this.style.transform='scale(1.03)'; this.style.boxShadow='0 8px 30px rgba(0,0,0,0.15)';"
-                        onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';">
-                </div>
-                <div class="flex-grow-1 w-100">
-                    <h4>IT Specialist - Databases</h4>
-                    <p class="text-muted small">Information Technology Specialist certification in Databases issued by
-                        Certiport & Pearson VUE. Demonstrates proficiency in database design, data retrieval, data
-                        manipulation, and database object management. Awarded on May 13, 2026.</p>
-                    <div class="d-flex align-items-center justify-content-between mt-3">
-                        <div>
-                            <span class="badge bg-light text-dark border">ID: w9BMP-FaGW</span>
-                        </div>
-                        <a href="https://verify.certiport.com" target="_blank" rel="noopener noreferrer"
-                            class="btn btn-sm btn-outline-primary">Verify Credential →</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Certificate 2 (Spans 4 columns) -->
-        <div class="bento-card span-4">
-            <div class="d-flex flex-column flex-md-row gap-4 align-items-center">
-                <div style="min-width: 280px; max-width: 340px; width: 100%;">
-                    <img src="assests/html_css_certificate.png" class="w-100" alt="IT Specialist - HTML and CSS"
-                        onclick="openLightbox('assests/html_css_certificate.png', 'IT Specialist - HTML and CSS Certificate')"
-                        style="object-fit: cover; border-radius: 12px; border: 1px solid #e9ecef; height: 200px; cursor: zoom-in; transition: transform 0.2s, box-shadow 0.2s;"
-                        onmouseover="this.style.transform='scale(1.03)'; this.style.boxShadow='0 8px 30px rgba(0,0,0,0.15)';"
-                        onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';">
-                </div>
-                <div class="flex-grow-1 w-100">
-                    <h4>IT Specialist - HTML and CSS</h4>
-                    <p class="text-muted small">Information Technology Specialist certification in HTML and CSS issued
-                        by Certiport & Pearson VUE. Validates expertise in structuring web content with semantic HTML
-                        and styling with modern CSS techniques. Awarded on May 18, 2026.</p>
-                    <div class="d-flex align-items-center justify-content-between mt-3">
-                        <div>
-                            <span class="badge bg-light text-dark border">ID: hkLc-4wUp</span>
-                        </div>
-                        <a href="https://verify.certiport.com" target="_blank" rel="noopener noreferrer"
-                            class="btn btn-sm btn-outline-primary">Verify Credential →</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Contact (Spans 4 columns) -->
-        <div class="bento-card span-4 bg-dark text-white" id="contact"
-            style="background: linear-gradient(45deg, #212529, #343a40);">
-            <div class="d-flex justify-content-between align-items-center flex-wrap gap-3">
-                <div>
-                    <h3 class="mb-1 text-white">Let's work together!</h3>
-                    <p class="mb-0 text-white-50">I'm currently available for freelance work or full-time positions.</p>
-                </div>
-                <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJfscdlgwpGvNWwHTMMNmGTkLNZcZZSdbNCNZLDmqPqBKmHNxlmZMCWQsHTnGhnHhWSNTLq"
-                    class="btn btn-light rounded-pill px-4">Contact Me</a>
-            </div>
-        </div>
-
+    <!-- Social icons -->
+    <div class="nav-socials">
+      <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJfscdlgwpGvNWwHTMMNmGTkLNZcZZSdbNCNZLDmqPqBKmHNxlmZMCWQsHTnGhnHhWSNTLq"
+        title="Email" aria-label="Send Email">
+        <i class="fas fa-envelope"></i>
+      </a>
+      <a href="https://www.facebook.com/johnisaac.sobredilla.7" target="_blank" rel="noopener noreferrer"
+        title="Facebook" aria-label="Facebook">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/isaac-sobredilla-b3118839b/" target="_blank" rel="noopener noreferrer"
+        title="LinkedIn" aria-label="LinkedIn">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+      <a href="https://github.com/jsobredilla559368-oss" target="_blank" rel="noopener noreferrer"
+        title="GitHub" aria-label="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
     </div>
 
-    <!-- Certificate Lightbox Modal -->
-    <div id="cert-lightbox" onclick="closeLightbox()" style="
-        display: none;
-        position: fixed;
-        inset: 0;
-        background: rgba(0,0,0,0.85);
-        z-index: 9999;
-        align-items: center;
-        justify-content: center;
-        padding: 20px;
-        backdrop-filter: blur(6px);
-        animation: fadeIn 0.25s ease;
-    ">
-        <div style="position: relative; max-width: 900px; width: 100%; animation: scaleIn 0.25s ease;"
-            onclick="event.stopPropagation()">
-            <button onclick="closeLightbox()" style="
-                position: absolute;
-                top: -16px;
-                right: -16px;
-                background: #fff;
-                border: none;
-                border-radius: 50%;
-                width: 36px;
-                height: 36px;
-                font-size: 1.2rem;
-                cursor: pointer;
-                z-index: 10;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-            ">✕</button>
-            <img id="lightbox-img" src="" alt=""
-                style="width: 100%; border-radius: 16px; box-shadow: 0 20px 60px rgba(0,0,0,0.5); display: block;">
-        </div>
+  </nav>
+
+  <!-- ============================================================
+       HERO — SPLIT IDENTITY
+       ============================================================ -->
+  <section id="home" class="hero">
+
+    <!-- LEFT: Developer -->
+    <div class="hero-side hero-left">
+      <span class="hero-word">developer</span>
+      <p class="hero-sub">
+        Front-end craftsman building clean, fast web experiences — from wireframe to deployment.
+      </p>
+      <div class="hero-ctas">
+        <a href="#work" class="btn-solid">View Work</a>
+        <a href="https://drive.google.com/file/d/1GkpCZ1AP-BRcOLickW_g4ifV3ogSqMlM/view?usp=sharing"
+          target="_blank" rel="noopener noreferrer" class="btn-outline">Resume ↗</a>
+      </div>
+      <div class="hero-status">
+        <span class="hero-status-dot"></span>
+        available for hire
+      </div>
     </div>
 
-    <!-- Footer -->
-    <footer class="text-center py-4 text-muted mt-5">
-        <small>&copy; 2026 Isaac Sobredilla. All rights reserved.</small>
-    </footer>
+    <!-- CENTER: Photo Split -->
+    <div class="hero-photo-container">
+      <img src="assests/Sobredilla (1).jpg" class="hero-photo" alt="Isaac Sobredilla">
+      <div class="photo-paint-layer"></div>
+      <div class="photo-right-tint"></div>
+      <div class="photo-bisect"></div>
+      <div class="photo-code-text">
+        &lt;html&gt;<br>
+        &nbsp;&nbsp;class=&quot;dev&quot;<br>
+        &nbsp;&nbsp;ai_tools=true;<br>
+        &nbsp;&nbsp;display:flex;<br>
+        &lt;/html&gt;
+      </div>
+    </div>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+    <!-- RIGHT: Builder -->
+    <div class="hero-side hero-right">
+      <span class="hero-word-code">&lt;builder /&gt;</span>
+      <p class="hero-sub">
+        Full-stack &amp; AI engineer shipping real products end-to-end — React, Laravel, and beyond.
+      </p>
+      <div class="hero-ctas">
+        <a href="#contact" class="btn-solid">Let's Work</a>
+        <a href="https://www.linkedin.com/in/isaac-sobredilla-b3118839b/" target="_blank"
+          rel="noopener noreferrer" class="btn-outline">LinkedIn ↗</a>
+      </div>
+    </div>
 
-    <style>
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
+  </section>
 
-            to {
-                opacity: 1;
-            }
+  <!-- ============================================================
+       ABOUT
+       ============================================================ -->
+  <section id="about" class="about-section">
+    <img src="assests/about_bg.png" class="about-bg-img" alt="">
+    <div class="container">
+      <span class="section-label reveal">about me</span>
+      <div class="about-grid">
+
+        <!-- Bio -->
+        <div class="about-bio reveal">
+          <p>
+            A detail-oriented web developer with a strong foundation in Information Technology,
+            passionate about crafting clean, responsive, and user-friendly web experiences. I
+            specialize in building modern interfaces using React, Tailwind, and TypeScript —
+            bringing designs to life from wireframe to deployment using tools like Figma and Vercel.
+          </p>
+          <p>
+            Beyond the front-end, I have full-stack experience building robust systems with Laravel
+            and PostgreSQL. Whether working independently or collaborating in a team, I thrive on
+            solving complex problems and continuously learning new technologies to build impactful
+            digital solutions.
+          </p>
+          <p>
+            I also work with AI tools — Antigravity, Claude, Gemini, and GitHub Copilot — as part
+            of my everyday development workflow, shipping faster and smarter.
+          </p>
+        </div>
+
+        <!-- Facts -->
+        <div class="about-facts reveal reveal-d2">
+          <div class="fact-row">
+            <span class="fact-label">Projects Shipped</span>
+            <span class="fact-value">6+</span>
+          </div>
+          <div class="fact-row">
+            <span class="fact-label">Certifications</span>
+            <span class="fact-value">2</span>
+          </div>
+          <div class="fact-row">
+            <span class="fact-label">Location</span>
+            <span class="fact-value sm">Davao City, Philippines</span>
+          </div>
+          <div class="fact-row">
+            <span class="fact-label">Education</span>
+            <span class="fact-value sm">BS Information Technology<br>University of Mindanao</span>
+          </div>
+          <div class="fact-row">
+            <span class="fact-label">Status</span>
+            <span class="fact-value avail">
+              <span class="avail-dot"></span>
+              Available for Hire
+            </span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SKILLS
+       ============================================================ -->
+  <section id="skills" class="skills-section">
+    <div class="container">
+      <span class="section-label reveal">skills &amp; tools</span>
+      <div class="skills-layout">
+
+        <!-- Tag groups -->
+        <div class="skills-groups">
+
+          <div class="reveal">
+            <span class="skills-group-title">Frontend</span>
+            <div class="tags-row">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">React</span>
+              <span class="tag">TypeScript</span>
+              <span class="tag">Tailwind CSS</span>
+              <span class="tag">Bootstrap</span>
+            </div>
+          </div>
+
+          <div class="reveal reveal-d1">
+            <span class="skills-group-title">Backend</span>
+            <div class="tags-row">
+              <span class="tag t-accent">Laravel</span>
+              <span class="tag t-accent">PostgreSQL</span>
+            </div>
+          </div>
+
+          <div class="reveal reveal-d2">
+            <span class="skills-group-title">Tools &amp; AI</span>
+            <div class="tags-row">
+              <span class="tag">Git</span>
+              <span class="tag">GitHub</span>
+              <span class="tag">Vercel</span>
+              <span class="tag">Figma</span>
+              <span class="tag">VS Code</span>
+              <span class="tag t-accent">Antigravity</span>
+              <span class="tag t-accent">Claude</span>
+              <span class="tag t-accent">Gemini</span>
+              <span class="tag t-accent">GitHub Copilot</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Ornament -->
+        <div class="skills-ornament-col reveal reveal-d3">
+          <img src="assests/skills_ornament.png" class="skills-ornament-img" alt="">
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       WORK (PROJECTS)
+       ============================================================ -->
+  <section id="work" class="work-section">
+    <div class="container">
+      <span class="section-label reveal">recent work</span>
+      <h2 class="section-heading reveal">Projects.</h2>
+
+      <div class="projects-grid">
+
+        <!-- Project 1: SusDevPro -->
+        <article class="project-card reveal">
+          <div class="project-thumb-wrap">
+            <img src="assests/susdevpro.png" class="project-thumb"
+              alt="SusDevPro Environmental Engineering Services">
+          </div>
+          <div class="project-body">
+            <span class="project-index">01 / project</span>
+            <h3 class="project-title">SusDevPro Environmental Engineering</h3>
+            <p class="project-desc">A professional website for an environmental consulting and engineering
+              firm, helping clients achieve compliance while minimizing ecological impact in Davao City
+              and beyond.</p>
+            <div class="project-footer">
+              <div class="tech-stack">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">TypeScript</span>
+                <span class="tech-tag">Tailwind</span>
+                <span class="tech-tag">Vercel</span>
+              </div>
+              <a href="https://susdevproprototype1-gamma.vercel.app/" target="_blank" rel="noopener noreferrer"
+                class="live-link">Live ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2: Rice BMS -->
+        <article class="project-card reveal reveal-d1">
+          <div class="project-thumb-wrap">
+            <img src="assests/ricems.png" class="project-thumb" alt="Rice Business Management System">
+          </div>
+          <div class="project-body">
+            <span class="project-index">02 / project</span>
+            <h3 class="project-title">Rice Business Management System</h3>
+            <p class="project-desc">A comprehensive inventory and order management system for rice
+              businesses — product tracking, payment processing, and administrative dashboards built
+              full-stack.</p>
+            <div class="project-footer">
+              <div class="tech-stack">
+                <span class="tech-tag">Laravel</span>
+                <span class="tech-tag">PostgreSQL</span>
+                <span class="tech-tag">Tailwind</span>
+              </div>
+              <a href="https://sobredilla-labexam2-1.onrender.com/" target="_blank" rel="noopener noreferrer"
+                class="live-link">Live ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3: KRONVEX -->
+        <article class="project-card reveal reveal-d1">
+          <div class="project-thumb-wrap">
+            <img src="assests/kronvex.png" class="project-thumb" alt="KRONVEX — Home Gym OS">
+          </div>
+          <div class="project-body">
+            <span class="project-index">03 / project</span>
+            <h3 class="project-title">KRONVEX — Home Gym OS</h3>
+            <p class="project-desc">A premium home gym platform — "Train Like an Athlete." Smart workout
+              plans, real-time analytics, personalized AI coaching, and nutrition &amp; macro tracking
+              in one app.</p>
+            <div class="project-footer">
+              <div class="tech-stack">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">TypeScript</span>
+                <span class="tech-tag">Tailwind</span>
+              </div>
+              <a href="https://kronvex.netlify.app/" target="_blank" rel="noopener noreferrer"
+                class="live-link">Live ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 4: ResumeScan -->
+        <article class="project-card reveal reveal-d2">
+          <div class="project-thumb-wrap">
+            <img src="assests/resumescan.png" class="project-thumb" alt="ResumeScan — AI ATS Checker">
+          </div>
+          <div class="project-body">
+            <span class="project-index">04 / project</span>
+            <h3 class="project-title">ResumeScan — AI ATS Checker</h3>
+            <p class="project-desc">An AI-powered ATS Resume Checker that scores resumes against job
+              descriptions, identifies missing keywords, and delivers actionable rewrite suggestions.
+              Powered by Llama 3.3 70B.</p>
+            <div class="project-footer">
+              <div class="tech-stack">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Tailwind</span>
+                <span class="tech-tag">AI / Llama</span>
+              </div>
+              <a href="https://superb-cheesecake-06dbde.netlify.app/" target="_blank"
+                rel="noopener noreferrer" class="live-link">Live ↗</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CLIENTS
+       ============================================================ -->
+  <section id="clients" class="clients-section">
+    <div class="container">
+      <span class="section-label reveal">freelance</span>
+      <h2 class="section-heading reveal">Client Websites.</h2>
+
+      <div class="clients-grid">
+
+        <!-- Client 1 -->
+        <div class="client-card reveal">
+          <span class="client-index">01 / client</span>
+          <div class="client-name">Jenny Morales</div>
+          <span class="client-type-label">Personal Portfolio &amp; Blog</span>
+          <p class="client-desc">A vibrant personal portfolio and blog website crafted for Jenny
+            Morales, showcasing her work and personal brand with a clean, modern aesthetic.</p>
+          <a href="https://jennymorales.lovestoblog.com/" target="_blank" rel="noopener noreferrer"
+            class="client-link">Visit Site ↗</a>
+        </div>
+
+        <!-- Client 2 -->
+        <div class="client-card reveal reveal-d1">
+          <span class="client-index">02 / client</span>
+          <div class="client-name">Dahuno G</div>
+          <span class="client-type-label">Professional Portfolio</span>
+          <p class="client-desc">A sleek and professional portfolio website built for Dahuno G,
+            highlighting skills, projects, and achievements in a polished digital presence.</p>
+          <a href="https://dahunogportfolio.page.gd/" target="_blank" rel="noopener noreferrer"
+            class="client-link">Visit Site ↗</a>
+        </div>
+
+        <!-- Client 3 -->
+        <div class="client-card reveal reveal-d2">
+          <span class="client-index">03 / client</span>
+          <div class="client-name">Banog I Blogger</div>
+          <span class="client-type-label">Blog Portfolio</span>
+          <p class="client-desc">A creative blog-style portfolio for Banog I, combining personal
+            storytelling with professional presentation in a fully responsive layout.</p>
+          <a href="https://banogiblogger.infinityfree.me/" target="_blank" rel="noopener noreferrer"
+            class="client-link">Visit Site ↗</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CERTIFICATIONS
+       ============================================================ -->
+  <section id="certifications" class="certs-section">
+    <div class="container">
+      <span class="section-label reveal">credentials</span>
+      <h2 class="section-heading reveal">Certifications.</h2>
+
+      <div class="certs-list">
+
+        <!-- Cert 1: Databases -->
+        <div class="cert-card reveal">
+          <div class="cert-img-col">
+            <img src="assests/database_certificate.png" class="cert-img" alt="IT Specialist — Databases"
+              onclick="openLightbox('assests/database_certificate.png', 'IT Specialist — Databases')">
+          </div>
+          <div class="cert-body">
+            <div>
+              <span class="cert-issuer">Certiport &amp; Pearson VUE — May 13, 2026</span>
+              <h3 class="cert-title">IT Specialist — Databases</h3>
+              <p class="cert-desc">Information Technology Specialist certification in Databases.
+                Demonstrates proficiency in database design, data retrieval, manipulation, and database
+                object management. Awarded by Certiport.</p>
+            </div>
+            <div class="cert-footer">
+              <span class="cert-id">ID: w9BMP-FaGW</span>
+              <a href="https://verify.certiport.com" target="_blank" rel="noopener noreferrer"
+                class="cert-verify">Verify Credential ↗</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cert 2: HTML & CSS -->
+        <div class="cert-card reveal reveal-d1">
+          <div class="cert-img-col">
+            <img src="assests/html_css_certificate.png" class="cert-img" alt="IT Specialist — HTML and CSS"
+              onclick="openLightbox('assests/html_css_certificate.png', 'IT Specialist — HTML and CSS')">
+          </div>
+          <div class="cert-body">
+            <div>
+              <span class="cert-issuer">Certiport &amp; Pearson VUE — May 18, 2026</span>
+              <h3 class="cert-title">IT Specialist — HTML and CSS</h3>
+              <p class="cert-desc">Information Technology Specialist certification in HTML and CSS.
+                Validates expertise in structuring web content with semantic HTML and styling with
+                modern CSS techniques.</p>
+            </div>
+            <div class="cert-footer">
+              <span class="cert-id">ID: hkLc-4wUp</span>
+              <a href="https://verify.certiport.com" target="_blank" rel="noopener noreferrer"
+                class="cert-verify">Verify Credential ↗</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CONTACT
+       ============================================================ -->
+  <section id="contact" class="contact-section">
+    <img src="assests/contact_bg.png" class="contact-bg-img" alt="">
+    <div class="container">
+      <div class="contact-inner">
+
+        <div class="contact-left reveal">
+          <span class="contact-eyebrow">// let's collaborate</span>
+          <h2 class="contact-headline">
+            let's<br>
+            <span class="accent-word">work.</span>
+          </h2>
+          <p class="contact-sub">
+            I'm currently available for freelance projects and full-time positions.
+            Let's build something great together.
+          </p>
+        </div>
+
+        <div class="contact-actions reveal reveal-d2">
+          <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJfscdlgwpGvNWwHTMMNmGTkLNZcZZSdbNCNZLDmqPqBKmHNxlmZMCWQsHTnGhnHhWSNTLq"
+            class="btn-white">
+            <i class="fas fa-envelope"></i> Email Me
+          </a>
+          <a href="https://www.linkedin.com/in/isaac-sobredilla-b3118839b/" target="_blank"
+            rel="noopener noreferrer" class="btn-ghost-white">
+            <i class="fab fa-linkedin-in"></i> LinkedIn
+          </a>
+          <a href="https://drive.google.com/file/d/1GkpCZ1AP-BRcOLickW_g4ifV3ogSqMlM/view?usp=sharing"
+            target="_blank" rel="noopener noreferrer" class="btn-ghost-white">
+            <i class="fas fa-file-alt"></i> Resume
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer>
+    <div class="container">
+      <p>© 2026 Isaac Sobredilla — Built with care &amp; precision.</p>
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       CERTIFICATE LIGHTBOX
+       ============================================================ -->
+  <div id="cert-lightbox" onclick="closeLightbox()">
+    <div class="lightbox-inner" onclick="event.stopPropagation()">
+      <button class="lightbox-close" onclick="closeLightbox()" aria-label="Close">✕</button>
+      <img id="lightbox-img" src="" alt="">
+    </div>
+  </div>
+
+  <!-- ============================================================
+       SCRIPTS
+       ============================================================ -->
+  <script>
+    /* ------ Scroll Reveal ------ */
+    const revealEls = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
         }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -32px 0px' });
+    revealEls.forEach(el => observer.observe(el));
 
-        @keyframes scaleIn {
-            from {
-                transform: scale(0.88);
-                opacity: 0;
-            }
+    /* ------ Active Nav Highlight ------ */
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-links a');
+    const sectionObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          navLinks.forEach(link => link.style.color = '');
+          const active = document.querySelector(`.nav-links a[href="#${entry.target.id}"]`);
+          if (active) active.style.color = '#ffffff';
+        }
+      });
+    }, { threshold: 0.45 });
+    sections.forEach(s => sectionObserver.observe(s));
 
-            to {
-                transform: scale(1);
-                opacity: 1;
-            }
-        }
-    </style>
+    /* ------ Certificate Lightbox ------ */
+    function openLightbox(src, alt) {
+      const lb = document.getElementById('cert-lightbox');
+      const img = document.getElementById('lightbox-img');
+      img.src = src;
+      img.alt = alt || '';
+      lb.style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+    }
+    function closeLightbox() {
+      document.getElementById('cert-lightbox').style.display = 'none';
+      document.body.style.overflow = '';
+    }
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape') closeLightbox();
+    });
+  </script>
 
-    <script>
-        function openLightbox(src, alt) {
-            const lb = document.getElementById('cert-lightbox');
-            const img = document.getElementById('lightbox-img');
-            img.src = src;
-            img.alt = alt || '';
-            lb.style.display = 'flex';
-            document.body.style.overflow = 'hidden';
-        }
-        function closeLightbox() {
-            const lb = document.getElementById('cert-lightbox');
-            lb.style.display = 'none';
-            document.body.style.overflow = '';
-        }
-        // Close on Escape key
-        document.addEventListener('keydown', function (e) {
-            if (e.key === 'Escape') closeLightbox();
-        });
-    </script>
 </body>
 
 </html>
